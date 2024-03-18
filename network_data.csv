@@ -1,0 +1,7 @@
+# Generating network packet data
+np.random.seed(0)
+data = np.random.rand(200, 4)  # Generating random data with 4 features and 200 samples
+
+# Writing generated data to CSV file
+df = pd.DataFrame(data)
+df.to_csv('network_data.csv', index=False, header=False)
